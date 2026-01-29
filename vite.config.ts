@@ -5,8 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      // AJOUT : Indique à Vite le chemin du dépôt GitHub
-      base: '/mada-facture/', 
+      // CORRECTION : Utilisation du nom exact du dépôt 'mata-facture'
+      base: '/mata-facture/', 
       server: {
         port: 3000,
         host: '0.0.0.0',
