@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  // Remplacez './' par le nom exact de votre dépôt
+  // Remplace './' par le nom exact de ton dépôt entre slashs
   base: '/mata-facture/', 
   build: {
     outDir: 'dist',
