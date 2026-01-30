@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # Pas de cache ici pour éviter l'erreur de lockfile manquant
 
       - name: Install dependencies
         run: npm install
@@ -39,7 +39,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # On déploie uniquement le dossier compilé (dist)
+          # On déploie UNIQUEMENT le dossier compilé généré par Vite
           path: './dist' 
 
       - name: Deploy to GitHub Pages
